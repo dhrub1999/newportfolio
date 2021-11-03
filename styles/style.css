@@ -1,0 +1,1032 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Caudex:wght@400;700&family=Cormorant:ital,wght@1,300;1,500&family=Merienda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Engagement&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.main {
+  position: relative;
+}
+
+.main .hero-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main .hero-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  width: 25%;
+  max-width: 500px;
+  background: #000;
+  z-index: -2;
+}
+
+.main .hero-container .nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .hero-container .nav .nav-container .logo-container svg {
+  height: 100px;
+  width: 100px;
+  margin-left: 12px;
+}
+
+.main .hero-container .nav .nav-container .links-container {
+  position: absolute;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.97);
+  width: 100%;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.main .hero-container .nav .nav-container .links-container .links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  gap: 3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .hero-container .nav .nav-container .links-container .links li a {
+  text-decoration: none;
+  font-family: "Caudex", serif;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.main .hero-container .nav .nav-container .links-container .links li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid white;
+  width: 0%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main .hero-container .nav .nav-container .links-container .links li a:hover::after {
+  width: 100%;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 20%;
+  width: 100%;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background {
+  height: 100%;
+  width: 100%;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background .social-links li a {
+  text-decoration: none;
+  color: #6a6a6a;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background .social-links li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 0.65em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(0) translate(-50%, -50%);
+          transform: scale(0) translate(-50%, -50%);
+  border-radius: 0.2em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background .social-links li a:hover {
+  color: #ddd;
+}
+
+.main .hero-container .nav .nav-container .links-container .social-container .background .social-links li a:hover::after {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+}
+
+.main .hero-container .nav .nav-container .show-links {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.main .hero-container .nav .hamburger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 99;
+  padding: 1rem;
+}
+
+.main .hero-container .nav .hamburger-container span {
+  height: 2px;
+  width: 30px;
+  background: #650101;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main .hero-container .nav .cross span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 4px);
+          transform: rotate(45deg) translate(5px, 4px);
+}
+
+.main .hero-container .nav .cross span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main .hero-container .hero-section .hero {
+  color: #650101;
+  padding: 1.5em 2.1em;
+  height: calc(100vh - 100px);
+}
+
+.main .hero-container .hero-section .hero .headline {
+  max-width: 300px;
+}
+
+.main .hero-container .hero-section .hero .headline h1 {
+  font-size: 3rem;
+  color: #6a6a6a;
+  font-family: "Merienda", Arial, cursive;
+  font-weight: 700;
+}
+
+.main .hero-container .hero-section .hero .headline h1 .brown {
+  color: #650101;
+}
+
+.main .hero-container .hero-section .hero .headline h1 .blue {
+  color: #00a3ff;
+}
+
+.main .hero-container .hero-section .hero .subheadline {
+  margin-top: 2em;
+}
+
+.main .hero-container .hero-section .hero .subheadline p {
+  font-size: 1rem;
+  color: #ff8a00;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+}
+
+.main .hero-container .hero-section .hero .btn-container {
+  margin-top: 5em;
+}
+
+.main .hero-container .hero-section .hero .btn-container a {
+  display: block;
+  text-decoration: none;
+}
+
+.main .hero-container .hero-section .hero .btn-container a button {
+  padding: 0.6rem 2rem;
+  border-radius: 3rem;
+  background: none;
+  color: #00a3ff;
+  font-family: "Caudex", serif;
+  outline: none;
+  border: 3px solid #00a3ff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main .hero-container .hero-section .hero .btn-container a button:hover {
+  border-color: white;
+}
+
+.main .hero-container .arrow-svg {
+  position: absolute;
+  right: 7%;
+  bottom: 1%;
+  z-index: -1;
+}
+
+.main .experiments {
+  min-height: 100vh;
+  margin-top: 10em;
+}
+
+.main .experiments .exp-container {
+  margin: 0 2em;
+}
+
+.main .experiments .exp-container .intro-container .headline h2 {
+  font-size: 2rem;
+  font-family: "Merienda", Arial, cursive;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #00a3ff;
+}
+
+.main .experiments .exp-container .intro-container .subheadline {
+  margin-top: 2em;
+}
+
+.main .experiments .exp-container .intro-container .subheadline p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  color: #ff8a00;
+}
+
+.main .experiments .exp-container .projects-container .padding-container {
+  padding: 3em 0;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project {
+  padding: 0 1em 1.5em 1.5em;
+  border: 3px solid transparent;
+  width: 100%;
+  height: 60vw;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  -webkit-box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/large/humble-heart.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  z-index: -3;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project:hover::after {
+  width: 0%;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project .project-title {
+  font-family: "Caudex", serif;
+  color: #FB9D97;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project p {
+  color: #ff8a00;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project a {
+  display: block;
+  text-decoration: none;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project a button {
+  margin-top: 2em;
+  font-size: 0.7rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #6565659c;
+  color: white;
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: -1px 1px 3px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .project a button:hover {
+  background: #000000e3;
+  -webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .two::before {
+  background: url("../images/large/Glitch.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .horizontal .three::before {
+  background: url("../images/large/jokes.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .title-container {
+  margin: 3em 0;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .title-container .subtitle {
+  font-size: 1.5rem;
+  font-family: "Merienda", Arial, cursive;
+  text-align: center;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical {
+  margin-top: 2em;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a {
+  text-decoration: none;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project {
+  border-radius: 0.3rem;
+  height: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 0.5em 4em 0.5em;
+  position: relative;
+  border: 2px solid transparent;
+  -webkit-box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project::before {
+  border-radius: 0.3rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/small/box.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project::after {
+  border-radius: 0.3rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project:hover::after {
+  width: 0%;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project:hover .title {
+  color: #fff;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project:hover .title::after {
+  width: 100%;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project .title {
+  font-size: 1.2rem;
+  font-family: "Caudex", serif;
+  color: #FB9D97;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 1em 1em;
+  position: relative;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .small-project .title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  width: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .two::before {
+  background: url("../images/small/hamburgers.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .three::before {
+  background: url("../images/small/login.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .experiments .exp-container .projects-container .padding-container .vertical .grid-container a .four::before {
+  background: url("../images/small/quote.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .about {
+  margin-top: 10em;
+  position: relative;
+}
+
+.main .about .content-container {
+  margin: 0 2em;
+}
+
+.main .about .content-container .padding-container .about-title {
+  font-size: 2rem;
+  font-family: "Merienda", Arial, cursive;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #00a3ff;
+}
+
+.main .about .content-container .padding-container .para {
+  margin-top: 2em;
+}
+
+.main .about .content-container .padding-container .para p {
+  font-size: 1rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  letter-spacing: 0.1rem;
+  color: #ff8a00;
+  line-height: 1.5rem;
+}
+
+.main .about .content-container .padding-container .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+
+.main .about .content-container .padding-container .one .my-img {
+  width: 70vw;
+  height: 70vw;
+  background: url("../images/my-img/myimage.jpg");
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main .about .content-container .padding-container .two {
+  text-align: right;
+  margin-top: 3em;
+}
+
+.main .about .content-container .padding-container .svg-container {
+  margin: 3em 0;
+}
+
+.main .about .content-container .padding-container .svg-container .png-img {
+  width: 100%;
+  height: 60vw;
+  background: url("../images/svgs/coding.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.main .contact {
+  margin-top: 10em;
+}
+
+.main .contact .contact-container {
+  position: relative;
+  margin: 0 2em;
+}
+
+.main .contact .contact-container .padding-container .contact-title {
+  font-size: 2rem;
+  font-family: "Merienda", Arial, cursive;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #00a3ff;
+}
+
+.main .contact .contact-container .padding-container .para {
+  margin-top: 1em;
+  font-size: 1rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  letter-spacing: 0.1rem;
+  color: #ff8a00;
+}
+
+.main .contact .contact-container .padding-container .form-container {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding {
+  background: #fafafa;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container {
+  padding: 2em;
+  border: 2px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .text-container .name {
+  font-size: 1.6rem;
+  font-family: "Cormorant", serif;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .text-container p {
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  margin-top: 1em;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #650101;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+  width: 100%;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container .link {
+  width: 100%;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container .link a {
+  width: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2em;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container .link a .box {
+  height: 30px;
+  width: 30px;
+  background: white;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container .link a .box i {
+  color: #6a6a6a;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .top-container .info-container .link a p {
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  color: #6a6a6a;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container {
+  margin-top: 4em;
+  background: #000;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2em;
+  -webkit-box-shadow: -1px 1px 5px rgba(128, 128, 128, 0.4);
+          box-shadow: -1px 1px 5px rgba(128, 128, 128, 0.4);
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Merienda", Arial, cursive;
+  font-weight: 400;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section {
+  margin-top: 3em;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container label {
+  font-family: "Caudex", serif;
+  position: relative;
+  font-size: 0.9rem;
+  color: #dfdfdf;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "*";
+  left: 105%;
+  color: #ff8a00;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container input {
+  width: 100%;
+  background: #2e2e2e;
+  outline: none;
+  border: none;
+  height: 2rem;
+  border-radius: 0.2rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  color: #d4d4d4;
+  padding: 0 0.7rem;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container input:focus {
+  background: #4e4e4e;
+  color: #d4d4d4;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .container textarea {
+  width: 100%;
+  background: #2e2e2e;
+  outline: none;
+  border: none;
+  height: 6rem;
+  border-radius: 0.2rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  padding: 0.5rem 0.7rem;
+  resize: unset;
+  text-overflow: clip;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .btn-container {
+  margin-top: 1em;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .btn-container a {
+  text-decoration: none;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .btn-container a button {
+  font-size: 0.7rem;
+  font-family: "Balsamiq Sans", Garamond, cursive;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #6565659c;
+  color: white;
+  border-radius: 0.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: -1px 1px 3px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section form .btn-container a button:hover {
+  background: #000000e3;
+  -webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.4);
+  border: 2px solid #fff;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section .message-box label::after {
+  display: none;
+}
+
+.main .contact .contact-container .padding-container .form-container .padding .bottom-container .form-section .message-box textarea:focus {
+  background: #4e4e4e;
+  color: #d4d4d4;
+}
+
+footer {
+  margin-top: 10em;
+}
+
+footer .container {
+  background: #000;
+  padding: 5em 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+footer .container .logo-svg {
+  display: block;
+}
+
+footer .container .logo-svg img {
+  width: 60px;
+}
+
+footer .container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+footer .container .social-container a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: grey;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+footer .container .social-container a:hover {
+  color: #acacac;
+}
+
+footer .container .para-end {
+  font-family: "Engagement", cursive;
+  font-size: 1rem;
+  color: grey;
+}
+
+footer .container .para-end .spcl {
+  color: white;
+}
+
+footer .container .para-end span {
+  color: #adadad;
+}
+/*# sourceMappingURL=style.css.map */
